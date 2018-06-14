@@ -1,0 +1,5 @@
+# Pyspark/Jupyter artifacts
+**/.ipynb_checkpoints/
+**/derby.log
+spark-warehouse
+metastore_db
