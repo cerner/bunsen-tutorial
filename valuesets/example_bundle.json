@@ -70,6 +70,51 @@
           ]
         }
       }
+    },
+    {
+      "resource": {
+        "resourceType": "ValueSet",
+        "id": "example-bunsen-tutorial",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+          ]
+        },
+        "url": "http://engineering.cerner.com/bunsen/example",
+        "identifier": [
+          {
+            "system": "http://engineering.cerner.com/bunsen/example",
+            "value": "diabetes-example"
+          }
+        ],
+        "version": "201806001",
+        "name": "Example valueset for diabetics and pre-diabetics",
+        "status": "draft",
+        "experimental": true,
+        "date": "2018-06-01",
+        "publisher": "Cerner Corporation",
+        "description": "This is an example value set for demo purposes.",
+        "compose": {
+          "lockedDate": "2018-06-01",
+          "inactive": true,
+          "include": [
+            {
+              "system": "http://snomed.info/sct",
+              "version": "20180301", 
+              "concept": [
+                {
+                  "code": "15777000",
+                  "display": "Pre-diabetes"
+                },
+                {
+                  "code": "44054006",
+                  "display": "Diabetes"
+                }
+              ]
+            }
+          ]
+        }
+      }
     }
   ]
 }
